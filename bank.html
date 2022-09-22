@@ -22,15 +22,15 @@
         <div class="grid grid-cols-3 gap-4">
           <div class="bg-green-500 p-12 rounded">
             <h3 class="text-3xl">Deposit</h3>
-            <h4 class="text-3xl">$00</h4>
+            <h4 class="text-3xl">$<span id="deposit-total">00</span></h4>
           </div>
           <div class="bg-red-500 p-12 rounded">
             <h3 class="text-3xl">Withdraw</h3>
-            <h4 class="text-3xl">$00</h4>
+            <h4 class="text-3xl">$<span id="withdraw-total">00</span></h4>
           </div>
           <div class="bg-orange-500 p-12 rounded">
             <h3 class="text-3xl">Balance</h3>
-            <h4 class="text-3xl">$1500</h4>
+            <h4 class="text-3xl">$<span id="balance-total">1500</span></h4>
           </div>
         </div>
       </section>
@@ -59,7 +59,7 @@
             <h3 class="text-3xl mb-4">Please withdraw</h3>
             <div>
               <input
-                id="withdeaw-input"
+                id="withdraw-input"
                 class="border-2 border-black rounded block mb-4 w-3/4 px-3 py-1"
                 type="text"
                 placeholder="$withdraw money"
@@ -75,5 +75,6 @@
         </div>
       </section>
     </main>
+    <script src="./banking.js"></script>
   </body>
 </html>
